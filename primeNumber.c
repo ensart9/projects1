@@ -8,15 +8,14 @@ void isPrimeNumber(int x)
     if(x<2){
         prime=0;
     }
-
     else{
-
-        for(int i=2;i<x;i++)
+        for(int i=2;i*i<x;i++)
         {
-            if(x%i==0){
+            if(x%i==0)
+            {
                 prime=0;
+                break;
             }
-            break;
         }
     }
 
@@ -35,4 +34,5 @@ int main()
     scanf("%d",&n);
 
     isPrimeNumber(n);
+    return 0;
 }
