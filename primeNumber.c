@@ -1,26 +1,38 @@
+//A function to check if a number from the user is prime.
 #include <stdio.h>
 
-int main() {
-    int n, i, asal = 1;
+void isPrimeNumber(int x)
+{
+    int prime=1;
 
-    printf("Bir sayi giriniz: ");
-    scanf("%d", &n);
+    if(x<2){
+        prime=0;
+    }
 
-    if (n < 2) {
-        asal = 0; // 0 ve 1 asal değildir
-    } else {
-        for (i = 2; i < n; i++) {
-            if (n % i == 0) {
-                asal = 0;
-                break;
+    else{
+
+        for(int i=2;i<x;i++)
+        {
+            if(x%i==0){
+                prime=0;
             }
+            break;
         }
     }
 
-    if (asal == 1)
-        printf("%d asal sayidir.\n", n);
-    else
-        printf("%d asal sayi degildir.\n", n);
+    if(prime==1){
+     printf("%d is a prime number.",x);
+    }
+    else{
+     printf("%d is not a prime number.",x);
+    }
+}
 
-    return 0;
+int main()
+{
+    int n;
+    printf("Please enter a number:");
+    scanf("%d",&n);
+
+    isPrimeNumber(n);
 }
