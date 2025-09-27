@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float calcMachine(float m,char operator,float n)
+float calculate(float m,char operator,float n)
 {
     switch(operator)
     {
@@ -40,7 +40,7 @@ int main()
         if(scanf("%f %c %f",&x,&operation,&y)==3)
         {
                 if(operation=='+' || operation=='-' || operation=='*' || operation=='/' || operation=='^'){
-                    calcMachine(x,operation,y);
+                    calculate(x,operation,y);
                     break;
             }
                 else{
@@ -55,6 +55,7 @@ int main()
         }
     }
 
-    float result=calcMachine(x,operation,y);
+    float result=calculate(x,operation,y);
     printf("%.2f",result);
+
 }
