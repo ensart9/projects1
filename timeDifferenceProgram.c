@@ -35,13 +35,13 @@ int main()
 {
     struct time time1,time2,difference;
 
-    printf("Baslangic zamanini giriniz(saat,dakika,saniye): ");
+    printf("Enter the start time (hh mm ss): ");
     scanf("%d%d%d",&time1.hour,&time1.minute,&time1.second);
-    printf("Bitis zamanini giriniz(saat,dakika,saniye): ");
+    printf("Enter the end time (hh mm ss): ");
     scanf("%d%d%d",&time2.hour,&time2.minute,&time2.second);
-
 
     timeDifference(time1,time2,&difference);
     printf("Zaman farki:%dhh %dmm %dss",difference.hour,difference.minute,difference.second);
 
 }
+
