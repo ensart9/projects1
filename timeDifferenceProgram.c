@@ -1,14 +1,4 @@
-/*Kullanıcı tarafından başlangıç ve bitiş zamanları saat, dakika ve saniye şeklinde girilmektedir.
-Buna göre aşağıda kullanılan yapı ve fonksiyonu kullanarak iki zaman dilimi arasındaki farkı
-hesaplayan C programını yazınız.
-
-    struct zaman{
-        int saniye;
-        int dakika;
-        int saat;
-    };
-    void fark (struct zaman t1, struct zaman t2, struct zaman *farki);
-*/
+// A program that calculates the difference between the start and end times entered
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -53,4 +43,5 @@ int main()
 
     timeDifference(time1,time2,&difference);
     printf("Zaman farki:%dhh %dmm %dss",difference.hour,difference.minute,difference.second);
+
 }
