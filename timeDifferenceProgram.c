@@ -44,5 +44,3 @@ int main()
     printf("Time difference: %dhh %dmm %dss",difference.hour,difference.minute,difference.second);
 
 }
-
-
