@@ -41,7 +41,8 @@ int main()
     scanf("%d%d%d",&time2.hour,&time2.minute,&time2.second);
 
     timeDifference(time1,time2,&difference);
-    printf("Zaman farki:%dhh %dmm %dss",difference.hour,difference.minute,difference.second);
+    printf("Time difference: %dhh %dmm %dss",difference.hour,difference.minute,difference.second);
 
 }
+
 
